@@ -1,0 +1,4 @@
+
+- Clean up Linux 5.19.3 config
+- Incorporate patches for mipi-csi2 and ISP
+
