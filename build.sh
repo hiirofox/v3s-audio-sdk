@@ -12,6 +12,7 @@ set -e
 SDK_ROOT="$(cd "$(dirname "$0")" && pwd)"
 BUILDROOT_DIR="$SDK_ROOT/buildroot"
 OUTPUT_DIR="$BUILDROOT_DIR/output"
+BAREMETAL_DIR="$SDK_ROOT/baremetal"
 
 # ====== 功能函数 ======
 init() {
@@ -19,11 +20,36 @@ init() {
     export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/bin
     echo "PATH sanitized for WSL."
 }
+# --- 新增：编译裸机代码 ---
+build_baremetal() {
+    echo ">>> [BareMetal] Building app.bin..."
+    
+    # 检查工具链是否存在 (依赖 Buildroot 编译一次)
+    if [ ! -f "$OUTPUT_DIR/host/bin/arm-buildroot-linux-gnueabihf-gcc" ]; then
+        echo "Error: Toolchain not found! Please run './build.sh buildroot-config' or './build.sh all' first."
+        exit 1
+    fi
 
+    # 调用 baremetal 目录下的 Makefile
+    make -C "$BAREMETAL_DIR"
+
+    # 将生成的 app.bin 拷贝到 Buildroot 的 images 目录
+    # 这样 genimage 才能找到它
+    if [ -f "$BAREMETAL_DIR/output/app.bin" ]; then
+        cp "$BAREMETAL_DIR/output/app.bin" "$OUTPUT_DIR/images/"
+        echo ">>> [BareMetal] app.bin copied to Buildroot images dir."
+    else
+        echo "Error: BareMetal build failed, app.bin not found."
+        exit 1
+    fi
+}
 # --- 新增的 clean 函数 ---
 clean() {
     echo ">>> [Clean] Triggering Linux Kernel and DTS rebuild..."
     
+    # 0. 清理裸机项目
+    make -C "$BAREMETAL_DIR" clean
+
     # 1. 强制重新编译内核 (会更新 DTS)
     # linux-rebuild 会清理内核构建目录并重新编译，比 dirclean + make 更快更精准
     make -C "$BUILDROOT_DIR" O=output BR2_EXTERNAL=board/v3s3 linux-rebuild
@@ -76,6 +102,9 @@ build_module() {
             echo "Building root filesystem..."
             make -C "$BUILDROOT_DIR" target
             ;;
+        baremetal)  # <--- 新增单独编译选项
+            build_baremetal
+            ;;
         *)
             echo "Unknown module: $module"
             exit 1
@@ -86,6 +115,12 @@ build_module() {
 build_all() {
     echo "Building all modules..."
     make -C "$BUILDROOT_DIR" O=output BR2_EXTERNAL=board/v3s3 -j$(nproc)
+
+##new:    # 编译裸机应用
+    build_baremetal
+
+    echo "Repacking sdcard.img with baremetal app..."
+    make -C "$BUILDROOT_DIR" O=output BR2_EXTERNAL=board/v3s3 target-post-image
 }
 
 updateimg() {
