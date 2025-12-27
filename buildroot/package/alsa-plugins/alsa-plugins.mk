@@ -17,8 +17,8 @@ ALSA_PLUGINS_CONF_OPTS = \
 	--disable-pulseaudio \
 	--disable-libav \
 	--disable-maemo-plugin \
-	--disable-maemo-resource-manager \
-	--with-speex=no
+	--disable-maemo-resource-manager
+
 
 ifeq ($(BR2_PACKAGE_ALSA_UTILS),y)
 ALSA_PLUGINS_DEPENDENCIES += alsa-utils
@@ -31,6 +31,13 @@ ALSA_PLUGINS_LICENSE += , GPL-2.0+ (samplerate plugin)
 ALSA_PLUGINS_LICENSE_FILES += COPYING.GPL
 else
 ALSA_PLUGINS_CONF_OPTS += --disable-samplerate
+endif
+
+ifeq ($(BR2_PACKAGE_SPEEXDSP),y)
+ALSA_PLUGINS_CONF_OPTS += --with-speex=lib --enable-speexrate
+ALSA_PLUGINS_DEPENDENCIES += speexdsp
+else
+ALSA_PLUGINS_CONF_OPTS += --with-speex=no
 endif
 
 $(eval $(autotools-package))

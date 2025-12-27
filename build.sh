@@ -3,13 +3,9 @@
 # Author: hiirfox
 # Usage:
 #   ./build.sh init
+#   ./build.sh clean          # <--- 新增：修改DTS后执行这个
 #   ./build.sh buildroot-config
-#   ./build.sh kernel-config
-#   ./build.sh bootloader
-#   ./build.sh kernel
-#   ./build.sh rootfs
-#   ./build.sh updateimg
-#   ./build.sh           # build all
+#   ...
 
 set -e
 
@@ -21,8 +17,26 @@ OUTPUT_DIR="$BUILDROOT_DIR/output"
 init() {
     # 排除 PATH 中带空格的目录，防止 WSL 错误
     export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/bin
-
     echo "PATH sanitized for WSL."
+}
+
+# --- 新增的 clean 函数 ---
+clean() {
+    echo ">>> [Clean] Triggering Linux Kernel and DTS rebuild..."
+    
+    # 1. 强制重新编译内核 (会更新 DTS)
+    # linux-rebuild 会清理内核构建目录并重新编译，比 dirclean + make 更快更精准
+    make -C "$BUILDROOT_DIR" O=output BR2_EXTERNAL=board/v3s3 linux-rebuild
+    
+    # 2. 如果你也修改了 U-Boot 的 DTS，取消下面这行的注释
+    # make -C "$BUILDROOT_DIR" O=output BR2_EXTERNAL=board/v3s3 uboot-rebuild
+    
+    # 3. 重新打包最终镜像 (sdcard.img)
+    echo ">>> [Clean] Repacking system images..."
+    make -C "$BUILDROOT_DIR" O=output BR2_EXTERNAL=board/v3s3 all
+    
+    # 4. 自动执行更新拷贝
+    updateimg
 }
 
 buildroot_config() {
@@ -73,23 +87,27 @@ build_all() {
     echo "Building all modules..."
     make -C "$BUILDROOT_DIR" O=output BR2_EXTERNAL=board/v3s3 -j$(nproc)
 }
+
 updateimg() {
     echo "Generating update.img and copying images..."
     # 确保 output 目录存在
     rm -rf "$SDK_ROOT/output"
     mkdir -p "$SDK_ROOT/output"
 
-    # 调用 Buildroot 生成 sdcard.img（如果之前没有生成）
-    # make -C "$BUILDROOT_DIR" sdcard.img
-
     # 拷贝 images 下所有文件到 SDK 根目录 output
     echo "Copying images to $SDK_ROOT/output/ ..."
     cp -a "$OUTPUT_DIR/images/"* "$SDK_ROOT/output/"
-    cp "$BUILDROOT_DIR/output/build/uboot-2022.01/u-boot-sunxi-with-spl.bin" "$SDK_ROOT/output/"
-    cp "$BUILDROOT_DIR/output/build/host-uboot-tools-2021.07/tools/uboot-env.bin" "$SDK_ROOT/output/"
-    cp "$BUILDROOT_DIR/output/build/host-uboot-tools-2021.07/tools/boot.scr" "$SDK_ROOT/output/"
-    cp "$BUILDROOT_DIR/output/build/uboot-2022.01/arch/arm/dts/sun8i-v3s-licheepi-zero.dtb" "$SDK_ROOT/output/"
-    echo "Copied the following files:"
+    
+    # 尝试拷贝一些可能用到的中间文件 (加了容错处理，防止文件不存在报错)
+    if [ -f "$BUILDROOT_DIR/output/build/uboot-2022.01/u-boot-sunxi-with-spl.bin" ]; then
+        cp "$BUILDROOT_DIR/output/build/uboot-2022.01/u-boot-sunxi-with-spl.bin" "$SDK_ROOT/output/"
+    fi
+    
+    # 注意：这里的路径可能会随版本变化，建议以 output/images 为准
+    # cp "$BUILDROOT_DIR/output/build/host-uboot-tools-2021.07/tools/uboot-env.bin" "$SDK_ROOT/output/" || true
+    # cp "$BUILDROOT_DIR/output/build/host-uboot-tools-2021.07/tools/boot.scr" "$SDK_ROOT/output/" || true
+    
+    echo "Copied files to $SDK_ROOT/output/"
     ls -l "$SDK_ROOT/output/"
 }
 
@@ -103,6 +121,10 @@ else
     case "$1" in
         init)
             init
+            ;;
+        clean)           # <--- 这里增加了 clean 选项
+            init
+            clean
             ;;
         buildroot-config)
             init
@@ -126,7 +148,7 @@ else
             ;;
         *)
             echo "Unknown option: $1"
-            echo "Usage: $0 [init|buildroot-config|kernel-config|bootloader|kernel|rootfs|updateimg|all]"
+            echo "Usage: $0 [init|clean|buildroot-config|kernel-config|bootloader|kernel|rootfs|updateimg|all]"
             exit 1
             ;;
     esac
