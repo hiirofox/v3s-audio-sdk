@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/built-in.a := rm -f drivers/usb/gadget/built-in.a; echo usbstring.o config.o epautoconf.o composite.o functions.o configfs.o u_f.o udc/built-in.a function/built-in.a legacy/built-in.a | sed -E 's:([^ ]+):drivers/usb/gadget/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/usb/gadget/built-in.a

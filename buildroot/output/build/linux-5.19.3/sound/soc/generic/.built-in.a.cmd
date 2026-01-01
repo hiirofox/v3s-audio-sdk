@@ -1,0 +1,1 @@
+cmd_sound/soc/generic/built-in.a := rm -f sound/soc/generic/built-in.a; echo simple-card-utils.o simple-card.o test-component.o | sed -E 's:([^ ]+):sound/soc/generic/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/generic/built-in.a

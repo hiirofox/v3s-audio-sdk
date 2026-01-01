@@ -1,0 +1,1 @@
+cmd_kernel/module/built-in.a := rm -f kernel/module/built-in.a; echo main.o strict_rwx.o procfs.o sysfs.o | sed -E 's:([^ ]+):kernel/module/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/module/built-in.a

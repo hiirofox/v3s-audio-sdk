@@ -1,0 +1,1 @@
+cmd_sound/pci/lola/built-in.a := rm -f sound/pci/lola/built-in.a; echo  | sed -E 's:([^ ]+):sound/pci/lola/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/pci/lola/built-in.a

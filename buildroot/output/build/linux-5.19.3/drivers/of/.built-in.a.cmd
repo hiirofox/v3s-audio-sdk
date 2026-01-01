@@ -1,0 +1,1 @@
+cmd_drivers/of/built-in.a := rm -f drivers/of/built-in.a; echo base.o device.o platform.o property.o kobj.o fdt.o fdt_address.o address.o irq.o of_reserved_mem.o | sed -E 's:([^ ]+):drivers/of/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/of/built-in.a

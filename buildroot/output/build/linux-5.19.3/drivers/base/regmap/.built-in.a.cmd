@@ -1,0 +1,1 @@
+cmd_drivers/base/regmap/built-in.a := rm -f drivers/base/regmap/built-in.a; echo regmap.o regcache.o regcache-rbtree.o regcache-flat.o regmap-debugfs.o regmap-i2c.o regmap-mmio.o | sed -E 's:([^ ]+):drivers/base/regmap/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/base/regmap/built-in.a

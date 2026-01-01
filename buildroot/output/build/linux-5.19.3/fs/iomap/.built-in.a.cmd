@@ -1,0 +1,1 @@
+cmd_fs/iomap/built-in.a := rm -f fs/iomap/built-in.a; echo trace.o iter.o buffered-io.o direct-io.o fiemap.o seek.o | sed -E 's:([^ ]+):fs/iomap/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/iomap/built-in.a

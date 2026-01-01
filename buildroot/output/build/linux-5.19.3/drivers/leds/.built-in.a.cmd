@@ -1,0 +1,1 @@
+cmd_drivers/leds/built-in.a := rm -f drivers/leds/built-in.a; echo led-core.o led-class.o led-triggers.o leds-gpio.o trigger/built-in.a blink/built-in.a simple/built-in.a | sed -E 's:([^ ]+):drivers/leds/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/leds/built-in.a

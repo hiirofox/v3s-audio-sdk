@@ -1,0 +1,1 @@
+cmd_drivers/bus/mhi/host/built-in.a := rm -f drivers/bus/mhi/host/built-in.a; echo  | sed -E 's:([^ ]+):drivers/bus/mhi/host/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/bus/mhi/host/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/st/built-in.a := rm -f drivers/media/platform/st/built-in.a; echo sti/bdisp/built-in.a sti/c8sectpfe/built-in.a sti/delta/built-in.a sti/hva/built-in.a stm32/built-in.a | sed -E 's:([^ ]+):drivers/media/platform/st/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/platform/st/built-in.a

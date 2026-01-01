@@ -1,0 +1,3 @@
+/home/hiirofox/v3s-sdk/buildroot/board/v3s3/board/licheepi/linux/patch/cedar-VE.patch
+/home/hiirofox/v3s-sdk/buildroot/board/v3s3/board/licheepi/linux/patch/dma-buf-header.patch
+/home/hiirofox/v3s-sdk/buildroot/board/v3s3/board/licheepi/linux/patch/sun6i-video.patch

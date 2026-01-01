@@ -1,0 +1,1 @@
+cmd_drivers/gpu/drm/bridge/built-in.a := rm -f drivers/gpu/drm/bridge/built-in.a; echo analogix/built-in.a cadence/built-in.a synopsys/built-in.a | sed -E 's:([^ ]+):drivers/gpu/drm/bridge/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/gpu/drm/bridge/built-in.a

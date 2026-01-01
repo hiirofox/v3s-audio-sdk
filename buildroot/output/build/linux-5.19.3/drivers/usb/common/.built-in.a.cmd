@@ -1,0 +1,1 @@
+cmd_drivers/usb/common/built-in.a := rm -f drivers/usb/common/built-in.a; echo common.o | sed -E 's:([^ ]+):drivers/usb/common/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/usb/common/built-in.a

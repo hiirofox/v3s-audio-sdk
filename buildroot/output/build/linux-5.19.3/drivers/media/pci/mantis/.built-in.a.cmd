@@ -1,0 +1,1 @@
+cmd_drivers/media/pci/mantis/built-in.a := rm -f drivers/media/pci/mantis/built-in.a; echo  | sed -E 's:([^ ]+):drivers/media/pci/mantis/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/pci/mantis/built-in.a

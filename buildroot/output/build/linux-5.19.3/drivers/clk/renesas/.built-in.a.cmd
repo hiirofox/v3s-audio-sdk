@@ -1,0 +1,1 @@
+cmd_drivers/clk/renesas/built-in.a := rm -f drivers/clk/renesas/built-in.a; echo  | sed -E 's:([^ ]+):drivers/clk/renesas/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/clk/renesas/built-in.a

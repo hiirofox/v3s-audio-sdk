@@ -1,0 +1,1 @@
+cmd_drivers/cxl/built-in.a := rm -f drivers/cxl/built-in.a; echo core/built-in.a | sed -E 's:([^ ]+):drivers/cxl/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/cxl/built-in.a

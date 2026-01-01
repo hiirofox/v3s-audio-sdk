@@ -1,0 +1,1 @@
+cmd_drivers/i3c/built-in.a := rm -f drivers/i3c/built-in.a; echo  | sed -E 's:([^ ]+):drivers/i3c/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/i3c/built-in.a

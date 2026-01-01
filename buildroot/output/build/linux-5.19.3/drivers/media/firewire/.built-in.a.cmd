@@ -1,0 +1,1 @@
+cmd_drivers/media/firewire/built-in.a := rm -f drivers/media/firewire/built-in.a; echo  | sed -E 's:([^ ]+):drivers/media/firewire/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/firewire/built-in.a

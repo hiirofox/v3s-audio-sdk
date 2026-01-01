@@ -1,0 +1,1 @@
+cmd_drivers/tty/serial/built-in.a := rm -f drivers/tty/serial/built-in.a; echo serial_core.o earlycon.o 8250/built-in.a serial_mctrl_gpio.o | sed -E 's:([^ ]+):drivers/tty/serial/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/tty/serial/built-in.a

@@ -1,0 +1,1 @@
+cmd_net/netlink/built-in.a := rm -f net/netlink/built-in.a; echo af_netlink.o genetlink.o policy.o | sed -E 's:([^ ]+):net/netlink/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST net/netlink/built-in.a

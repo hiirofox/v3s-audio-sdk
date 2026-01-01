@@ -1,0 +1,1 @@
+cmd_drivers/media/i2c/built-in.a := rm -f drivers/media/i2c/built-in.a; echo ov5640.o | sed -E 's:([^ ]+):drivers/media/i2c/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/i2c/built-in.a

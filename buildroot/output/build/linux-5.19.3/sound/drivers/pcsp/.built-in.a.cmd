@@ -1,0 +1,1 @@
+cmd_sound/drivers/pcsp/built-in.a := rm -f sound/drivers/pcsp/built-in.a; echo  | sed -E 's:([^ ]+):sound/drivers/pcsp/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/drivers/pcsp/built-in.a

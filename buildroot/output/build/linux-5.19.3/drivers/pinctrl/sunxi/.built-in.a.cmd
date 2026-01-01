@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/sunxi/built-in.a := rm -f drivers/pinctrl/sunxi/built-in.a; echo pinctrl-sunxi.o pinctrl-sun8i-v3s.o | sed -E 's:([^ ]+):drivers/pinctrl/sunxi/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/pinctrl/sunxi/built-in.a

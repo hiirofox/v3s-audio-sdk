@@ -1,0 +1,1 @@
+cmd_drivers/media/common/saa7146/built-in.a := rm -f drivers/media/common/saa7146/built-in.a; echo  | sed -E 's:([^ ]+):drivers/media/common/saa7146/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/common/saa7146/built-in.a

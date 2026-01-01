@@ -1,0 +1,1 @@
+cmd_drivers/regulator/built-in.a := rm -f drivers/regulator/built-in.a; echo core.o dummy.o fixed-helper.o helpers.o devres.o irq_helpers.o of_regulator.o fixed.o | sed -E 's:([^ ]+):drivers/regulator/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/regulator/built-in.a

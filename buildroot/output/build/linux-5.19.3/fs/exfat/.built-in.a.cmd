@@ -1,0 +1,1 @@
+cmd_fs/exfat/built-in.a := rm -f fs/exfat/built-in.a; echo inode.o namei.o dir.o super.o fatent.o cache.o nls.o misc.o file.o balloc.o | sed -E 's:([^ ]+):fs/exfat/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/exfat/built-in.a

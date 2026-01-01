@@ -1,0 +1,1 @@
+cmd_drivers/i2c/busses/built-in.a := rm -f drivers/i2c/busses/built-in.a; echo i2c-mv64xxx.o | sed -E 's:([^ ]+):drivers/i2c/busses/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/i2c/busses/built-in.a

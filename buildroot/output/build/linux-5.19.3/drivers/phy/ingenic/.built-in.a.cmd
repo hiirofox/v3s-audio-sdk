@@ -1,0 +1,1 @@
+cmd_drivers/phy/ingenic/built-in.a := rm -f drivers/phy/ingenic/built-in.a; echo  | sed -E 's:([^ ]+):drivers/phy/ingenic/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/ingenic/built-in.a

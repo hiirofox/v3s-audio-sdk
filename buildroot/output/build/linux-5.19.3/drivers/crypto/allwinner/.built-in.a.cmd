@@ -1,0 +1,1 @@
+cmd_drivers/crypto/allwinner/built-in.a := rm -f drivers/crypto/allwinner/built-in.a; echo sun4i-ss/built-in.a | sed -E 's:([^ ]+):drivers/crypto/allwinner/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/crypto/allwinner/built-in.a

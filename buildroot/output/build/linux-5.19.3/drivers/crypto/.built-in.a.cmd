@@ -1,0 +1,1 @@
+cmd_drivers/crypto/built-in.a := rm -f drivers/crypto/built-in.a; echo allwinner/built-in.a xilinx/built-in.a hisilicon/built-in.a keembay/built-in.a | sed -E 's:([^ ]+):drivers/crypto/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/crypto/built-in.a

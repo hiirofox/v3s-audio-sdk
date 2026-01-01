@@ -1,0 +1,1 @@
+cmd_lib/math/built-in.a := rm -f lib/math/built-in.a; echo div64.o gcd.o lcm.o int_pow.o int_sqrt.o reciprocal_div.o rational.o | sed -E 's:([^ ]+):lib/math/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST lib/math/built-in.a

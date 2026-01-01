@@ -1,0 +1,1 @@
+cmd_drivers/misc/lis3lv02d/built-in.a := rm -f drivers/misc/lis3lv02d/built-in.a; echo  | sed -E 's:([^ ]+):drivers/misc/lis3lv02d/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/misc/lis3lv02d/built-in.a

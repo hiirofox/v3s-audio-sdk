@@ -1,0 +1,1 @@
+cmd_drivers/usb/musb/built-in.a := rm -f drivers/usb/musb/built-in.a; echo musb_core.o musb_trace.o musb_virthub.o musb_host.o musb_gadget_ep0.o musb_gadget.o musb_debugfs.o sunxi.o | sed -E 's:([^ ]+):drivers/usb/musb/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/usb/musb/built-in.a

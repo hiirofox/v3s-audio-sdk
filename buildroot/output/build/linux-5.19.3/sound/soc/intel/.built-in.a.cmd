@@ -1,0 +1,1 @@
+cmd_sound/soc/intel/built-in.a := rm -f sound/soc/intel/built-in.a; echo common/built-in.a boards/built-in.a | sed -E 's:([^ ]+):sound/soc/intel/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/intel/built-in.a

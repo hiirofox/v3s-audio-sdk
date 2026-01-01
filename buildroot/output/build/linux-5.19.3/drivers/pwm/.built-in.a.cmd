@@ -1,0 +1,1 @@
+cmd_drivers/pwm/built-in.a := rm -f drivers/pwm/built-in.a; echo  | sed -E 's:([^ ]+):drivers/pwm/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/pwm/built-in.a

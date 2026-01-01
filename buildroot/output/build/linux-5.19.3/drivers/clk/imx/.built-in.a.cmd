@@ -1,0 +1,1 @@
+cmd_drivers/clk/imx/built-in.a := rm -f drivers/clk/imx/built-in.a; echo  | sed -E 's:([^ ]+):drivers/clk/imx/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/clk/imx/built-in.a

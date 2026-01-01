@@ -1,0 +1,1 @@
+cmd_sound/soc/sunxi/built-in.a := rm -f sound/soc/sunxi/built-in.a; echo sun4i-codec.o sun4i-i2s.o sun4i-spdif.o sun8i-codec-analog.o sun8i-codec.o sun8i-adda-pr-regmap.o | sed -E 's:([^ ]+):sound/soc/sunxi/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/sunxi/built-in.a

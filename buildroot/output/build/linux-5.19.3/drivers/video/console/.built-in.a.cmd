@@ -1,0 +1,1 @@
+cmd_drivers/video/console/built-in.a := rm -f drivers/video/console/built-in.a; echo dummycon.o | sed -E 's:([^ ]+):drivers/video/console/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/video/console/built-in.a

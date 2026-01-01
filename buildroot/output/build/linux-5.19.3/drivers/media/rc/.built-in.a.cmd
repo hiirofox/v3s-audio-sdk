@@ -1,0 +1,1 @@
+cmd_drivers/media/rc/built-in.a := rm -f drivers/media/rc/built-in.a; echo keymaps/built-in.a | sed -E 's:([^ ]+):drivers/media/rc/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/rc/built-in.a

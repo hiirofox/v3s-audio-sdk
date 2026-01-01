@@ -1,0 +1,1 @@
+cmd_drivers/usb/storage/built-in.a := rm -f drivers/usb/storage/built-in.a; echo scsiglue.o protocol.o transport.o usb.o initializers.o sierra_ms.o option_ms.o usual-tables.o | sed -E 's:([^ ]+):drivers/usb/storage/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/usb/storage/built-in.a

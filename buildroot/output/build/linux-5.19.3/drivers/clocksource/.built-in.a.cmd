@@ -1,0 +1,1 @@
+cmd_drivers/clocksource/built-in.a := rm -f drivers/clocksource/built-in.a; echo timer-of.o timer-probe.o mmio.o timer-sun4i.o arm_arch_timer.o | sed -E 's:([^ ]+):drivers/clocksource/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/clocksource/built-in.a

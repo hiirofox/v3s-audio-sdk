@@ -1,0 +1,1 @@
+cmd_drivers/net/ethernet/stmicro/built-in.a := rm -f drivers/net/ethernet/stmicro/built-in.a; echo stmmac/built-in.a | sed -E 's:([^ ]+):drivers/net/ethernet/stmicro/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/net/ethernet/stmicro/built-in.a

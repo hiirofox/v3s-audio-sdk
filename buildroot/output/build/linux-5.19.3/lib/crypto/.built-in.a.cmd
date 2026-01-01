@@ -1,0 +1,1 @@
+cmd_lib/crypto/built-in.a := rm -f lib/crypto/built-in.a; echo chacha.o aes.o blake2s.o blake2s-generic.o des.o | sed -E 's:([^ ]+):lib/crypto/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST lib/crypto/built-in.a

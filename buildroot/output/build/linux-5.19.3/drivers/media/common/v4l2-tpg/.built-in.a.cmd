@@ -1,0 +1,1 @@
+cmd_drivers/media/common/v4l2-tpg/built-in.a := rm -f drivers/media/common/v4l2-tpg/built-in.a; echo  | sed -E 's:([^ ]+):drivers/media/common/v4l2-tpg/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/common/v4l2-tpg/built-in.a

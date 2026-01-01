@@ -1,0 +1,1 @@
+cmd_drivers/dma/built-in.a := rm -f drivers/dma/built-in.a; echo dmaengine.o virt-dma.o of-dma.o sun6i-dma.o idxd/built-in.a mediatek/built-in.a qcom/built-in.a ti/built-in.a xilinx/built-in.a | sed -E 's:([^ ]+):drivers/dma/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/dma/built-in.a

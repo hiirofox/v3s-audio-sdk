@@ -1,0 +1,75 @@
+!<thin>
+//                                              928       `
+i2c/ov5640.o/
+mc/mc-device.o/
+mc/mc-devnode.o/
+mc/mc-entity.o/
+mc/mc-request.o/
+mc/mc-dev-allocator.o/
+v4l2-core/v4l2-async.o/
+v4l2-core/v4l2-fwnode.o/
+v4l2-core/v4l2-dv-timings.o/
+v4l2-core/v4l2-dev.o/
+v4l2-core/v4l2-ioctl.o/
+v4l2-core/v4l2-device.o/
+v4l2-core/v4l2-fh.o/
+v4l2-core/v4l2-event.o/
+v4l2-core/v4l2-subdev.o/
+v4l2-core/v4l2-common.o/
+v4l2-core/v4l2-ctrls-core.o/
+v4l2-core/v4l2-ctrls-api.o/
+v4l2-core/v4l2-ctrls-request.o/
+v4l2-core/v4l2-ctrls-defs.o/
+v4l2-core/v4l2-mc.o/
+v4l2-core/v4l2-i2c.o/
+dvb-core/dvbdev.o/
+dvb-core/dmxdev.o/
+dvb-core/dvb_demux.o/
+dvb-core/dvb_ca_en50221.o/
+dvb-core/dvb_frontend.o/
+dvb-core/dvb_ringbuffer.o/
+dvb-core/dvb_math.o/
+common/videobuf2/videobuf2-core.o/
+common/videobuf2/frame_vector.o/
+common/videobuf2/videobuf2-dma-contig.o/
+common/videobuf2/videobuf2-memops.o/
+common/videobuf2/videobuf2-v4l2.o/
+platform/sunxi/sun6i-csi/sun6i_video.o/
+platform/sunxi/sun6i-csi/sun6i_csi.o/
+
+/0              0           0     0     644     25216     `
+/14             0           0     0     644     11528     `
+/30             0           0     0     644     6384      `
+/47             0           0     0     644     16824     `
+/63             0           0     0     644     7960      `
+/80             0           0     0     644     3228      `
+/103            0           0     0     644     13676     `
+/127            0           0     0     644     13052     `
+/152            0           0     0     644     28404     `
+/181            0           0     0     644     17640     `
+/203            0           0     0     644     53808     `
+/227            0           0     0     644     6504      `
+/252            0           0     0     644     4808      `
+/273            0           0     0     644     8344      `
+/297            0           0     0     644     13916     `
+/322            0           0     0     644     9192      `
+/347            0           0     0     644     22252     `
+/376            0           0     0     644     17992     `
+/404            0           0     0     644     8068      `
+/436            0           0     0     644     35580     `
+/465            0           0     0     644     8828      `
+/486            0           0     0     644     4784      `
+/508            0           0     0     644     12916     `
+/527            0           0     0     644     12964     `
+/546            0           0     0     644     13968     `
+/568            0           0     0     644     18700     `
+/595            0           0     0     644     22704     `
+/620            0           0     0     644     7488      `
+/647            0           0     0     644     2632      `
+/668            0           0     0     644     36436     `
+/703            0           0     0     644     4368      `
+/736            0           0     0     644     9796      `
+/777            0           0     0     644     3396      `
+/814            0           0     0     644     24944     `
+/849            0           0     0     644     10248     `
+/889            0           0     0     644     13156     `

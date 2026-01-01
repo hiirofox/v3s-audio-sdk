@@ -1,0 +1,1 @@
+cmd_drivers/char/built-in.a := rm -f drivers/char/built-in.a; echo mem.o random.o misc.o agp/built-in.a | sed -E 's:([^ ]+):drivers/char/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/char/built-in.a

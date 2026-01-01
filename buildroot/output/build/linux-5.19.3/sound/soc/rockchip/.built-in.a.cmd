@@ -1,0 +1,1 @@
+cmd_sound/soc/rockchip/built-in.a := rm -f sound/soc/rockchip/built-in.a; echo  | sed -E 's:([^ ]+):sound/soc/rockchip/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/rockchip/built-in.a

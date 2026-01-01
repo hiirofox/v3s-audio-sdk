@@ -1,0 +1,14 @@
+!<thin>
+//                                              104       `
+sun4i-codec.o/
+sun4i-i2s.o/
+sun4i-spdif.o/
+sun8i-codec-analog.o/
+sun8i-codec.o/
+sun8i-adda-pr-regmap.o/
+/0              0           0     0     644     44784     `
+/15             0           0     0     644     16504     `
+/28             0           0     0     644     9676      `
+/43             0           0     0     644     22520     `
+/65             0           0     0     644     35380     `
+/80             0           0     0     644     3064      `

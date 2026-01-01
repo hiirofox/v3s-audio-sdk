@@ -1,0 +1,1 @@
+cmd_kernel/bpf/built-in.a := rm -f kernel/bpf/built-in.a; echo core.o | sed -E 's:([^ ]+):kernel/bpf/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/bpf/built-in.a

@@ -1,0 +1,1 @@
+cmd_kernel/dma/built-in.a := rm -f kernel/dma/built-in.a; echo mapping.o direct.o ops_helpers.o dummy.o contiguous.o coherent.o remap.o | sed -E 's:([^ ]+):kernel/dma/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/dma/built-in.a

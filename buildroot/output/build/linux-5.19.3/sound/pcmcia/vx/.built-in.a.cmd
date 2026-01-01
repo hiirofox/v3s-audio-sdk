@@ -1,0 +1,1 @@
+cmd_sound/pcmcia/vx/built-in.a := rm -f sound/pcmcia/vx/built-in.a; echo  | sed -E 's:([^ ]+):sound/pcmcia/vx/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/pcmcia/vx/built-in.a

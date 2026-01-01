@@ -1,0 +1,1 @@
+cmd_kernel/irq/built-in.a := rm -f kernel/irq/built-in.a; echo irqdesc.o handle.o manage.o spurious.o resend.o chip.o dummychip.o devres.o generic-chip.o autoprobe.o irqdomain.o proc.o | sed -E 's:([^ ]+):kernel/irq/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/irq/built-in.a

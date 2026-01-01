@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/renesas/built-in.a := rm -f drivers/media/platform/renesas/built-in.a; echo rcar-vin/built-in.a vsp1/built-in.a | sed -E 's:([^ ]+):drivers/media/platform/renesas/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/platform/renesas/built-in.a

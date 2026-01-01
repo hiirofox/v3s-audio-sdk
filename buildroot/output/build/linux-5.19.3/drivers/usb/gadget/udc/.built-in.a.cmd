@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/udc/built-in.a := rm -f drivers/usb/gadget/udc/built-in.a; echo core.o trace.o | sed -E 's:([^ ]+):drivers/usb/gadget/udc/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/usb/gadget/udc/built-in.a

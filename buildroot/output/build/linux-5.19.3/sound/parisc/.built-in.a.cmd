@@ -1,0 +1,1 @@
+cmd_sound/parisc/built-in.a := rm -f sound/parisc/built-in.a; echo  | sed -E 's:([^ ]+):sound/parisc/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/parisc/built-in.a

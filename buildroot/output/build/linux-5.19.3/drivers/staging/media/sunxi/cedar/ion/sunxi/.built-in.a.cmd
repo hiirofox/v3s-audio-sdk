@@ -1,0 +1,1 @@
+cmd_drivers/staging/media/sunxi/cedar/ion/sunxi/built-in.a := rm -f drivers/staging/media/sunxi/cedar/ion/sunxi/built-in.a; echo sunxi_ion.o cache.o | sed -E 's:([^ ]+):drivers/staging/media/sunxi/cedar/ion/sunxi/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/staging/media/sunxi/cedar/ion/sunxi/built-in.a

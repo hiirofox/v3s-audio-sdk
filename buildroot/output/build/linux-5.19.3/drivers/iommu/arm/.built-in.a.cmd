@@ -1,0 +1,1 @@
+cmd_drivers/iommu/arm/built-in.a := rm -f drivers/iommu/arm/built-in.a; echo arm-smmu/built-in.a arm-smmu-v3/built-in.a | sed -E 's:([^ ]+):drivers/iommu/arm/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/iommu/arm/built-in.a

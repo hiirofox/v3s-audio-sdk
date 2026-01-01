@@ -1,0 +1,1 @@
+cmd_drivers/net/pcs/built-in.a := rm -f drivers/net/pcs/built-in.a; echo pcs-xpcs.o pcs-xpcs-nxp.o | sed -E 's:([^ ]+):drivers/net/pcs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/net/pcs/built-in.a

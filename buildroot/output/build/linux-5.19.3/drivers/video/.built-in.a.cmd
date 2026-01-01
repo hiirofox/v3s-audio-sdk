@@ -1,0 +1,1 @@
+cmd_drivers/video/built-in.a := rm -f drivers/video/built-in.a; echo console/built-in.a backlight/built-in.a fbdev/built-in.a | sed -E 's:([^ ]+):drivers/video/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/video/built-in.a

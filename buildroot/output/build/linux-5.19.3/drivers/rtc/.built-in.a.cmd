@@ -1,0 +1,1 @@
+cmd_drivers/rtc/built-in.a := rm -f drivers/rtc/built-in.a; echo lib.o class.o interface.o nvmem.o dev.o proc.o sysfs.o rtc-sun6i.o | sed -E 's:([^ ]+):drivers/rtc/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/rtc/built-in.a

@@ -1,0 +1,1 @@
+cmd_fs/notify/built-in.a := rm -f fs/notify/built-in.a; echo dnotify/built-in.a inotify/built-in.a fanotify/built-in.a | sed -E 's:([^ ]+):fs/notify/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/notify/built-in.a

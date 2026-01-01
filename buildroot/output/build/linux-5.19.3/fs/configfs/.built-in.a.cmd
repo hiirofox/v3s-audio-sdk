@@ -1,0 +1,1 @@
+cmd_fs/configfs/built-in.a := rm -f fs/configfs/built-in.a; echo inode.o file.o dir.o symlink.o mount.o item.o | sed -E 's:([^ ]+):fs/configfs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/configfs/built-in.a

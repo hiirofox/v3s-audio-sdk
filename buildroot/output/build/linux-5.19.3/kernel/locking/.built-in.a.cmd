@@ -1,0 +1,1 @@
+cmd_kernel/locking/built-in.a := rm -f kernel/locking/built-in.a; echo mutex.o semaphore.o rwsem.o percpu-rwsem.o rtmutex_api.o | sed -E 's:([^ ]+):kernel/locking/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/locking/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/soc/bcm/built-in.a := rm -f drivers/soc/bcm/built-in.a; echo bcm63xx/built-in.a | sed -E 's:([^ ]+):drivers/soc/bcm/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/soc/bcm/built-in.a

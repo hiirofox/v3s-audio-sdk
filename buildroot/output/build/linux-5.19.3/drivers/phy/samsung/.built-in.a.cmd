@@ -1,0 +1,1 @@
+cmd_drivers/phy/samsung/built-in.a := rm -f drivers/phy/samsung/built-in.a; echo  | sed -E 's:([^ ]+):drivers/phy/samsung/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/samsung/built-in.a

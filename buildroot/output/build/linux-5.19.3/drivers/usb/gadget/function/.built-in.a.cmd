@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/function/built-in.a := rm -f drivers/usb/gadget/function/built-in.a; echo u_audio.o f_uac1.o f_uac2.o f_midi.o | sed -E 's:([^ ]+):drivers/usb/gadget/function/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/usb/gadget/function/built-in.a

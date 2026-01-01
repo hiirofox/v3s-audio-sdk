@@ -1,0 +1,1 @@
+cmd_drivers/phy/qualcomm/built-in.a := rm -f drivers/phy/qualcomm/built-in.a; echo  | sed -E 's:([^ ]+):drivers/phy/qualcomm/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/qualcomm/built-in.a

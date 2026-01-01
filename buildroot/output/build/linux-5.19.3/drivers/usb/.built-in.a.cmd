@@ -1,0 +1,1 @@
+cmd_drivers/usb/built-in.a := rm -f drivers/usb/built-in.a; echo common/built-in.a core/built-in.a phy/built-in.a host/built-in.a storage/built-in.a misc/built-in.a musb/built-in.a gadget/built-in.a | sed -E 's:([^ ]+):drivers/usb/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/usb/built-in.a

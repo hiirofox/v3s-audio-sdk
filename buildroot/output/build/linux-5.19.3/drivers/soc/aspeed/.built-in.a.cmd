@@ -1,0 +1,1 @@
+cmd_drivers/soc/aspeed/built-in.a := rm -f drivers/soc/aspeed/built-in.a; echo  | sed -E 's:([^ ]+):drivers/soc/aspeed/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/soc/aspeed/built-in.a

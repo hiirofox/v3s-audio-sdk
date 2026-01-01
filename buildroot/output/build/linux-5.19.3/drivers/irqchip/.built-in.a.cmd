@@ -1,0 +1,1 @@
+cmd_drivers/irqchip/built-in.a := rm -f drivers/irqchip/built-in.a; echo irqchip.o irq-sun6i-r.o irq-sunxi-nmi.o irq-gic.o irq-gic-common.o | sed -E 's:([^ ]+):drivers/irqchip/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/irqchip/built-in.a

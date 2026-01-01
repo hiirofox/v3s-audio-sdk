@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/mediatek/modules.order := {   cat drivers/media/platform/mediatek/jpeg/modules.order;   cat drivers/media/platform/mediatek/mdp/modules.order;   cat drivers/media/platform/mediatek/vcodec/modules.order;   cat drivers/media/platform/mediatek/vpu/modules.order; :; } | awk '!x[$$0]++' - > drivers/media/platform/mediatek/modules.order

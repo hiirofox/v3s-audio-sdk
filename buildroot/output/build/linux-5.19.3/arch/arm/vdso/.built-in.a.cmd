@@ -1,0 +1,1 @@
+cmd_arch/arm/vdso/built-in.a := rm -f arch/arm/vdso/built-in.a; echo vdso.o | sed -E 's:([^ ]+):arch/arm/vdso/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST arch/arm/vdso/built-in.a

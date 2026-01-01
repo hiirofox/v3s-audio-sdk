@@ -1,0 +1,15 @@
+!<thin>
+//                                              80        `
+input.o/
+input-compat.o/
+input-mt.o/
+input-poller.o/
+ff-core.o/
+touchscreen.o/
+
+/0              0           0     0     644     38244     `
+/9              0           0     0     644     2788      `
+/25             0           0     0     644     6820      `
+/37             0           0     0     644     5956      `
+/53             0           0     0     644     5100      `
+/64             0           0     0     644     4372      `

@@ -1,0 +1,1 @@
+cmd_drivers/net/built-in.a := rm -f drivers/net/built-in.a; echo mii.o loopback.o phy/built-in.a mdio/built-in.a pcs/built-in.a ethernet/built-in.a | sed -E 's:([^ ]+):drivers/net/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/net/built-in.a

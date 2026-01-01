@@ -1,0 +1,1 @@
+cmd_fs/debugfs/built-in.a := rm -f fs/debugfs/built-in.a; echo inode.o file.o | sed -E 's:([^ ]+):fs/debugfs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/debugfs/built-in.a

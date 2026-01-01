@@ -1,0 +1,1 @@
+cmd_sound/i2c/built-in.a := rm -f sound/i2c/built-in.a; echo other/built-in.a | sed -E 's:([^ ]+):sound/i2c/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/i2c/built-in.a

@@ -1,0 +1,1 @@
+cmd_sound/soc/jz4740/built-in.a := rm -f sound/soc/jz4740/built-in.a; echo  | sed -E 's:([^ ]+):sound/soc/jz4740/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/jz4740/built-in.a

@@ -1,0 +1,1 @@
+cmd_sound/soc/uniphier/built-in.a := rm -f sound/soc/uniphier/built-in.a; echo  | sed -E 's:([^ ]+):sound/soc/uniphier/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/uniphier/built-in.a

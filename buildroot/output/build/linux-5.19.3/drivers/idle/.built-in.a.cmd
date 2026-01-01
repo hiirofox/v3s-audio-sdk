@@ -1,0 +1,1 @@
+cmd_drivers/idle/built-in.a := rm -f drivers/idle/built-in.a; echo  | sed -E 's:([^ ]+):drivers/idle/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/idle/built-in.a

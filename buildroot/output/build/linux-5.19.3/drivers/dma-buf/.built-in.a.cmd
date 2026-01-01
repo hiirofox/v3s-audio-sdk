@@ -1,0 +1,1 @@
+cmd_drivers/dma-buf/built-in.a := rm -f drivers/dma-buf/built-in.a; echo dma-buf.o dma-fence.o dma-fence-array.o dma-fence-chain.o dma-resv.o sync_file.o | sed -E 's:([^ ]+):drivers/dma-buf/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/dma-buf/built-in.a

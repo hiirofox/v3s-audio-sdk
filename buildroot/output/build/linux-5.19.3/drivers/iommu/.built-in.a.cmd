@@ -1,0 +1,1 @@
+cmd_drivers/iommu/built-in.a := rm -f drivers/iommu/built-in.a; echo amd/built-in.a intel/built-in.a arm/built-in.a | sed -E 's:([^ ]+):drivers/iommu/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/iommu/built-in.a

@@ -1,0 +1,1 @@
+cmd_arch/arm/vfp/built-in.a := rm -f arch/arm/vfp/built-in.a; echo vfpmodule.o entry.o vfphw.o vfpsingle.o vfpdouble.o | sed -E 's:([^ ]+):arch/arm/vfp/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST arch/arm/vfp/built-in.a

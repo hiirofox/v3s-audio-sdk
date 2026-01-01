@@ -1,0 +1,1 @@
+cmd_net/802/built-in.a := rm -f net/802/built-in.a; echo  | sed -E 's:([^ ]+):net/802/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST net/802/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/pci/controller/built-in.a := rm -f drivers/pci/controller/built-in.a; echo dwc/built-in.a mobiveil/built-in.a | sed -E 's:([^ ]+):drivers/pci/controller/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/pci/controller/built-in.a

@@ -1,0 +1,1 @@
+cmd_net/unix/built-in.a := rm -f net/unix/built-in.a; echo af_unix.o garbage.o sysctl_net_unix.o scm.o | sed -E 's:([^ ]+):net/unix/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST net/unix/built-in.a

@@ -1,0 +1,1 @@
+cmd_sound/synth/built-in.a := rm -f sound/synth/built-in.a; echo emux/built-in.a | sed -E 's:([^ ]+):sound/synth/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/synth/built-in.a

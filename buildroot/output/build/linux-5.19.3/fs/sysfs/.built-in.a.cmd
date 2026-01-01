@@ -1,0 +1,1 @@
+cmd_fs/sysfs/built-in.a := rm -f fs/sysfs/built-in.a; echo file.o dir.o symlink.o mount.o group.o | sed -E 's:([^ ]+):fs/sysfs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/sysfs/built-in.a

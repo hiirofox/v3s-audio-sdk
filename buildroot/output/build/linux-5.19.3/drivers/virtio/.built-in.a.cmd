@@ -1,0 +1,1 @@
+cmd_drivers/virtio/built-in.a := rm -f drivers/virtio/built-in.a; echo  | sed -E 's:([^ ]+):drivers/virtio/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/virtio/built-in.a

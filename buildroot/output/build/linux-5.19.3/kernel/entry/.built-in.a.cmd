@@ -1,0 +1,1 @@
+cmd_kernel/entry/built-in.a := rm -f kernel/entry/built-in.a; echo  | sed -E 's:([^ ]+):kernel/entry/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/entry/built-in.a

@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/built-in.a := rm -f sound/soc/codecs/built-in.a; echo spdif_receiver.o spdif_transmitter.o | sed -E 's:([^ ]+):sound/soc/codecs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/codecs/built-in.a

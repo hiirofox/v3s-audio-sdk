@@ -1,0 +1,1 @@
+cmd_drivers/nvme/built-in.a := rm -f drivers/nvme/built-in.a; echo host/built-in.a target/built-in.a | sed -E 's:([^ ]+):drivers/nvme/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/nvme/built-in.a

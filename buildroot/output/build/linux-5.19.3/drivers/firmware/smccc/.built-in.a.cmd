@@ -1,0 +1,1 @@
+cmd_drivers/firmware/smccc/built-in.a := rm -f drivers/firmware/smccc/built-in.a; echo smccc.o kvm_guest.o soc_id.o | sed -E 's:([^ ]+):drivers/firmware/smccc/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/firmware/smccc/built-in.a

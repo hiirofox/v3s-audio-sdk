@@ -1,0 +1,1 @@
+cmd_drivers/phy/intel/built-in.a := rm -f drivers/phy/intel/built-in.a; echo  | sed -E 's:([^ ]+):drivers/phy/intel/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/intel/built-in.a

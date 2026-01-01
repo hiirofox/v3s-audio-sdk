@@ -1,0 +1,1 @@
+cmd_drivers/power/supply/built-in.a := rm -f drivers/power/supply/built-in.a; echo power_supply_core.o power_supply_sysfs.o power_supply_leds.o | sed -E 's:([^ ]+):drivers/power/supply/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/power/supply/built-in.a

@@ -1,0 +1,1 @@
+cmd_sound/isa/msnd/built-in.a := rm -f sound/isa/msnd/built-in.a; echo  | sed -E 's:([^ ]+):sound/isa/msnd/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/isa/msnd/built-in.a

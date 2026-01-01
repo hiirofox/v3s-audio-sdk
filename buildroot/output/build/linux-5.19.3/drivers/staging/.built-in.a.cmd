@@ -1,0 +1,1 @@
+cmd_drivers/staging/built-in.a := rm -f drivers/staging/built-in.a; echo media/built-in.a | sed -E 's:([^ ]+):drivers/staging/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/staging/built-in.a

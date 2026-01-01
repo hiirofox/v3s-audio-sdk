@@ -1,0 +1,1 @@
+cmd_drivers/phy/marvell/built-in.a := rm -f drivers/phy/marvell/built-in.a; echo  | sed -E 's:([^ ]+):drivers/phy/marvell/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/marvell/built-in.a

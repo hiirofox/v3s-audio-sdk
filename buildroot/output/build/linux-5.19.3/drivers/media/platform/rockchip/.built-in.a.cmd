@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/rockchip/built-in.a := rm -f drivers/media/platform/rockchip/built-in.a; echo rga/built-in.a rkisp1/built-in.a | sed -E 's:([^ ]+):drivers/media/platform/rockchip/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/platform/rockchip/built-in.a

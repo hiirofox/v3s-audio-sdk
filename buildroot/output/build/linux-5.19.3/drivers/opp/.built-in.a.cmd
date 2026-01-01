@@ -1,0 +1,1 @@
+cmd_drivers/opp/built-in.a := rm -f drivers/opp/built-in.a; echo core.o cpu.o of.o debugfs.o | sed -E 's:([^ ]+):drivers/opp/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/opp/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/leds/trigger/built-in.a := rm -f drivers/leds/trigger/built-in.a; echo ledtrig-activity.o ledtrig-default-on.o | sed -E 's:([^ ]+):drivers/leds/trigger/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/leds/trigger/built-in.a

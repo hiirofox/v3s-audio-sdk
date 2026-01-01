@@ -1,0 +1,14 @@
+sun8i-a83t-allwinner-h8homlet-v2.o: \
+ arch/arm/boot/dts/sun8i-a83t-allwinner-h8homlet-v2.dts \
+ arch/arm/boot/dts/sun8i-a83t.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-a83t-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-de2.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-r-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/reset/sun8i-a83t-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/reset/sun8i-de2.h \
+ scripts/dtc/include-prefixes/dt-bindings/reset/sun8i-r-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/thermal/thermal.h \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ arch/arm/boot/dts/axp81x.dtsi

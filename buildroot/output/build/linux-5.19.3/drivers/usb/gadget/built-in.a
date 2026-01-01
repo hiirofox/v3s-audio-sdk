@@ -1,0 +1,28 @@
+!<thin>
+//                                              184       `
+usbstring.o/
+config.o/
+epautoconf.o/
+composite.o/
+functions.o/
+configfs.o/
+u_f.o/
+udc/core.o/
+udc/trace.o/
+function/u_audio.o/
+function/f_uac1.o/
+function/f_uac2.o/
+function/f_midi.o/
+/0              0           0     0     644     2128      `
+/13             0           0     0     644     4596      `
+/23             0           0     0     644     3056      `
+/37             0           0     0     644     18820     `
+/50             0           0     0     644     4424      `
+/63             0           0     0     644     24152     `
+/75             0           0     0     644     1680      `
+/82             0           0     0     644     29472     `
+/94             0           0     0     644     756       `
+/107            0           0     0     644     17028     `
+/127            0           0     0     644     22536     `
+/146            0           0     0     644     28152     `
+/165            0           0     0     644     14596     `

@@ -1,0 +1,1 @@
+cmd_block/partitions/built-in.a := rm -f block/partitions/built-in.a; echo core.o msdos.o efi.o | sed -E 's:([^ ]+):block/partitions/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST block/partitions/built-in.a

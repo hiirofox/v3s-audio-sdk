@@ -1,0 +1,1 @@
+cmd_drivers/misc/built-in.a := rm -f drivers/misc/built-in.a; echo eeprom/built-in.a cb710/built-in.a ti-st/built-in.a lis3lv02d/built-in.a cardreader/built-in.a | sed -E 's:([^ ]+):drivers/misc/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/misc/built-in.a

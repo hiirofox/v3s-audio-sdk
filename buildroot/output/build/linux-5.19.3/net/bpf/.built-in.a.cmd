@@ -1,0 +1,1 @@
+cmd_net/bpf/built-in.a := rm -f net/bpf/built-in.a; echo  | sed -E 's:([^ ]+):net/bpf/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST net/bpf/built-in.a

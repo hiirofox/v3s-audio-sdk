@@ -1,0 +1,1 @@
+cmd_kernel/livepatch/built-in.a := rm -f kernel/livepatch/built-in.a; echo  | sed -E 's:([^ ]+):kernel/livepatch/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/livepatch/built-in.a

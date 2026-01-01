@@ -1,0 +1,1 @@
+cmd_fs/jbd2/built-in.a := rm -f fs/jbd2/built-in.a; echo transaction.o commit.o recovery.o checkpoint.o revoke.o journal.o | sed -E 's:([^ ]+):fs/jbd2/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/jbd2/built-in.a

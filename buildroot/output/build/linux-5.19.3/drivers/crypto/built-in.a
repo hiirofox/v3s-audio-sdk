@@ -1,0 +1,10 @@
+!<thin>
+//                                              146       `
+allwinner/sun4i-ss/sun4i-ss-core.o/
+allwinner/sun4i-ss/sun4i-ss-hash.o/
+allwinner/sun4i-ss/sun4i-ss-cipher.o/
+allwinner/sun4i-ss/sun4i-ss-prng.o/
+/0              0           0     0     644     16528     `
+/36             0           0     0     644     4908      `
+/72             0           0     0     644     7132      `
+/110            0           0     0     644     1804      `

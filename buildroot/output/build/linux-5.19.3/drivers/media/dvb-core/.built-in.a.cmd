@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-core/built-in.a := rm -f drivers/media/dvb-core/built-in.a; echo dvbdev.o dmxdev.o dvb_demux.o dvb_ca_en50221.o dvb_frontend.o dvb_ringbuffer.o dvb_math.o | sed -E 's:([^ ]+):drivers/media/dvb-core/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/dvb-core/built-in.a

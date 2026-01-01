@@ -1,0 +1,49 @@
+!<thin>
+//                                              438       `
+soc-core.o/
+soc-dapm.o/
+soc-jack.o/
+soc-utils.o/
+soc-dai.o/
+soc-component.o/
+soc-pcm.o/
+soc-devres.o/
+soc-ops.o/
+soc-link.o/
+soc-card.o/
+soc-generic-dmaengine-pcm.o/
+codecs/spdif_receiver.o/
+codecs/spdif_transmitter.o/
+generic/simple-card-utils.o/
+generic/simple-card.o/
+generic/test-component.o/
+sunxi/sun4i-codec.o/
+sunxi/sun4i-i2s.o/
+sunxi/sun4i-spdif.o/
+sunxi/sun8i-codec-analog.o/
+sunxi/sun8i-codec.o/
+sunxi/sun8i-adda-pr-regmap.o/
+
+/0              0           0     0     644     46292     `
+/12             0           0     0     644     47884     `
+/24             0           0     0     644     8196      `
+/36             0           0     0     644     6896      `
+/49             0           0     0     644     16204     `
+/60             0           0     0     644     27224     `
+/77             0           0     0     644     28212     `
+/88             0           0     0     644     4280      `
+/102            0           0     0     644     13152     `
+/113            0           0     0     644     4464      `
+/125            0           0     0     644     6128      `
+/137            0           0     0     644     8192      `
+/166            0           0     0     644     4664      `
+/191            0           0     0     644     4748      `
+/219            0           0     0     644     18612     `
+/248            0           0     0     644     9936      `
+/271            0           0     0     644     17080     `
+/297            0           0     0     644     44784     `
+/318            0           0     0     644     16504     `
+/337            0           0     0     644     9676      `
+/358            0           0     0     644     22520     `
+/386            0           0     0     644     35380     `
+/407            0           0     0     644     3064      `

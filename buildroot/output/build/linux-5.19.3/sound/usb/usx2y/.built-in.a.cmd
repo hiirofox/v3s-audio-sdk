@@ -1,0 +1,1 @@
+cmd_sound/usb/usx2y/built-in.a := rm -f sound/usb/usx2y/built-in.a; echo  | sed -E 's:([^ ]+):sound/usb/usx2y/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/usb/usx2y/built-in.a

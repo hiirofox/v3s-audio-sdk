@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/sunxi/built-in.a := rm -f drivers/media/platform/sunxi/built-in.a; echo sun4i-csi/built-in.a sun6i-csi/built-in.a sun8i-di/built-in.a sun8i-rotate/built-in.a | sed -E 's:([^ ]+):drivers/media/platform/sunxi/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/platform/sunxi/built-in.a

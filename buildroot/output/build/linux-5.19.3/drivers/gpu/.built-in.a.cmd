@@ -1,0 +1,1 @@
+cmd_drivers/gpu/built-in.a := rm -f drivers/gpu/built-in.a; echo host1x/built-in.a drm/built-in.a vga/built-in.a | sed -E 's:([^ ]+):drivers/gpu/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/gpu/built-in.a

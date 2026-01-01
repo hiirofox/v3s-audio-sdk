@@ -1,0 +1,1 @@
+cmd_sound/atmel/built-in.a := rm -f sound/atmel/built-in.a; echo  | sed -E 's:([^ ]+):sound/atmel/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/atmel/built-in.a

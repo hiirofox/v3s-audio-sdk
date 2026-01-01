@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/nxp/built-in.a := rm -f drivers/media/platform/nxp/built-in.a; echo imx-jpeg/built-in.a | sed -E 's:([^ ]+):drivers/media/platform/nxp/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/platform/nxp/built-in.a

@@ -1,0 +1,1 @@
+cmd_kernel/trace/built-in.a := rm -f kernel/trace/built-in.a; echo trace_clock.o | sed -E 's:([^ ]+):kernel/trace/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/trace/built-in.a

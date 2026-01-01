@@ -1,0 +1,1 @@
+cmd_security/keys/built-in.a := rm -f security/keys/built-in.a; echo gc.o key.o keyring.o keyctl.o permission.o process_keys.o request_key.o request_key_auth.o user_defined.o proc.o sysctl.o | sed -E 's:([^ ]+):security/keys/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST security/keys/built-in.a

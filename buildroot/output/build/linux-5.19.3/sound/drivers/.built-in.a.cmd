@@ -1,0 +1,1 @@
+cmd_sound/drivers/built-in.a := rm -f sound/drivers/built-in.a; echo opl3/built-in.a opl4/built-in.a mpu401/built-in.a vx/built-in.a pcsp/built-in.a | sed -E 's:([^ ]+):sound/drivers/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/drivers/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/ufs/built-in.a := rm -f drivers/ufs/built-in.a; echo  | sed -E 's:([^ ]+):drivers/ufs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/ufs/built-in.a

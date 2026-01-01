@@ -1,0 +1,1 @@
+cmd_drivers/phy/ralink/built-in.a := rm -f drivers/phy/ralink/built-in.a; echo  | sed -E 's:([^ ]+):drivers/phy/ralink/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/ralink/built-in.a

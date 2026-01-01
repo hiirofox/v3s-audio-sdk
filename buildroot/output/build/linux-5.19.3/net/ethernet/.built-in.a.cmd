@@ -1,0 +1,1 @@
+cmd_net/ethernet/built-in.a := rm -f net/ethernet/built-in.a; echo eth.o | sed -E 's:([^ ]+):net/ethernet/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST net/ethernet/built-in.a

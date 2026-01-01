@@ -1,0 +1,10 @@
+!<thin>
+//                                              70        `
+sun4i-ss-core.o/
+sun4i-ss-hash.o/
+sun4i-ss-cipher.o/
+sun4i-ss-prng.o/
+/0              0           0     0     644     16528     `
+/17             0           0     0     644     4908      `
+/34             0           0     0     644     7132      `
+/53             0           0     0     644     1804      `

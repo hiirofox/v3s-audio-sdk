@@ -1,0 +1,1 @@
+cmd_net/sched/built-in.a := rm -f net/sched/built-in.a; echo sch_generic.o sch_mq.o sch_frag.o | sed -E 's:([^ ]+):net/sched/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST net/sched/built-in.a

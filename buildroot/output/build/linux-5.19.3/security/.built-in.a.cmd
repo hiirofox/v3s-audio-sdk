@@ -1,0 +1,1 @@
+cmd_security/built-in.a := rm -f security/built-in.a; echo keys/built-in.a commoncap.o min_addr.o | sed -E 's:([^ ]+):security/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST security/built-in.a

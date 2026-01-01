@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/ttusb-dec/built-in.a := rm -f drivers/media/usb/ttusb-dec/built-in.a; echo  | sed -E 's:([^ ]+):drivers/media/usb/ttusb-dec/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/usb/ttusb-dec/built-in.a

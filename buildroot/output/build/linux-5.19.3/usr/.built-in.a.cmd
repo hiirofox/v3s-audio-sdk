@@ -1,0 +1,1 @@
+cmd_usr/built-in.a := rm -f usr/built-in.a; echo initramfs_data.o | sed -E 's:([^ ]+):usr/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST usr/built-in.a

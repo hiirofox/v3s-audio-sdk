@@ -1,0 +1,11 @@
+!<thin>
+//                                              64        `
+psci/psci.o/
+smccc/smccc.o/
+smccc/kvm_guest.o/
+smccc/soc_id.o/
+
+/0              0           0     0     644     9108      `
+/13             0           0     0     644     3448      `
+/28             0           0     0     644     2820      `
+/47             0           0     0     644     3820      `

@@ -1,0 +1,1 @@
+cmd_drivers/soc/sunxi/built-in.a := rm -f drivers/soc/sunxi/built-in.a; echo sunxi_mbus.o sunxi_sram.o | sed -E 's:([^ ]+):drivers/soc/sunxi/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/soc/sunxi/built-in.a

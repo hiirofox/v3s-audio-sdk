@@ -1,0 +1,1 @@
+cmd_drivers/firmware/efi/built-in.a := rm -f drivers/firmware/efi/built-in.a; echo  | sed -E 's:([^ ]+):drivers/firmware/efi/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/firmware/efi/built-in.a

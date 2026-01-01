@@ -1,0 +1,1 @@
+cmd_drivers/watchdog/built-in.a := rm -f drivers/watchdog/built-in.a; echo watchdog_core.o watchdog_dev.o sunxi_wdt.o | sed -E 's:([^ ]+):drivers/watchdog/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/watchdog/built-in.a

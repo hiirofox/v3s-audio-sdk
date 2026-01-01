@@ -1,0 +1,1 @@
+cmd_sound/soc/qcom/built-in.a := rm -f sound/soc/qcom/built-in.a; echo  | sed -E 's:([^ ]+):sound/soc/qcom/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/qcom/built-in.a

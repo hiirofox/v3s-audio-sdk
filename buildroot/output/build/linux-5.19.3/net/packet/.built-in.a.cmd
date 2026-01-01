@@ -1,0 +1,1 @@
+cmd_net/packet/built-in.a := rm -f net/packet/built-in.a; echo af_packet.o | sed -E 's:([^ ]+):net/packet/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST net/packet/built-in.a

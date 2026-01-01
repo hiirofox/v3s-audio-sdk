@@ -1,0 +1,1 @@
+cmd_drivers/soc/microchip/built-in.a := rm -f drivers/soc/microchip/built-in.a; echo  | sed -E 's:([^ ]+):drivers/soc/microchip/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/soc/microchip/built-in.a

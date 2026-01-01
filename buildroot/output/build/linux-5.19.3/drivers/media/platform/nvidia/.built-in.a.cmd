@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/nvidia/built-in.a := rm -f drivers/media/platform/nvidia/built-in.a; echo tegra-vde/built-in.a | sed -E 's:([^ ]+):drivers/media/platform/nvidia/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/platform/nvidia/built-in.a

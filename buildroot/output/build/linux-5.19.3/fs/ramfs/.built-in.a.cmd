@@ -1,0 +1,1 @@
+cmd_fs/ramfs/built-in.a := rm -f fs/ramfs/built-in.a; echo inode.o file-mmu.o | sed -E 's:([^ ]+):fs/ramfs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/ramfs/built-in.a

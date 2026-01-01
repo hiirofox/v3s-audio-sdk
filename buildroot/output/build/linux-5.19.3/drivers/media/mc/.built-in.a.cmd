@@ -1,0 +1,1 @@
+cmd_drivers/media/mc/built-in.a := rm -f drivers/media/mc/built-in.a; echo mc-device.o mc-devnode.o mc-entity.o mc-request.o mc-dev-allocator.o | sed -E 's:([^ ]+):drivers/media/mc/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/mc/built-in.a

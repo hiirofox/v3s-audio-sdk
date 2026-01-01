@@ -1,0 +1,14 @@
+!<thin>
+//                                              100       `
+i2c-boardinfo.o/
+i2c-core-base.o/
+i2c-core-smbus.o/
+i2c-core-of.o/
+i2c-dev.o/
+busses/i2c-mv64xxx.o/
+/0              0           0     0     644     2860      `
+/17             0           0     0     644     36388     `
+/34             0           0     0     644     10608     `
+/52             0           0     0     644     5212      `
+/67             0           0     0     644     8708      `
+/78             0           0     0     644     11912     `

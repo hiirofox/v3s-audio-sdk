@@ -1,0 +1,1 @@
+cmd_kernel/power/built-in.a := rm -f kernel/power/built-in.a; echo qos.o main.o | sed -E 's:([^ ]+):kernel/power/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/power/built-in.a

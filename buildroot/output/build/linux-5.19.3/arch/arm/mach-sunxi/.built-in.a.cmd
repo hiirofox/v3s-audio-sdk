@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-sunxi/built-in.a := rm -f arch/arm/mach-sunxi/built-in.a; echo sunxi.o | sed -E 's:([^ ]+):arch/arm/mach-sunxi/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST arch/arm/mach-sunxi/built-in.a

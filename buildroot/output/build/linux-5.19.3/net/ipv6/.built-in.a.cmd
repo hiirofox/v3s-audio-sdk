@@ -1,0 +1,1 @@
+cmd_net/ipv6/built-in.a := rm -f net/ipv6/built-in.a; echo addrconf_core.o exthdrs_core.o ip6_checksum.o ip6_icmp.o output_core.o protocol.o ip6_offload.o tcpv6_offload.o exthdrs_offload.o | sed -E 's:([^ ]+):net/ipv6/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST net/ipv6/built-in.a

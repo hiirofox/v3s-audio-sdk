@@ -1,0 +1,1 @@
+cmd_drivers/phy/allwinner/built-in.a := rm -f drivers/phy/allwinner/built-in.a; echo phy-sun4i-usb.o phy-sun9i-usb.o | sed -E 's:([^ ]+):drivers/phy/allwinner/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/allwinner/built-in.a

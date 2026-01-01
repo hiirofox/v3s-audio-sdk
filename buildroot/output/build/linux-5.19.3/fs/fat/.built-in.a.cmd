@@ -1,0 +1,1 @@
+cmd_fs/fat/built-in.a := rm -f fs/fat/built-in.a; echo cache.o dir.o fatent.o file.o inode.o misc.o nfs.o namei_vfat.o | sed -E 's:([^ ]+):fs/fat/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/fat/built-in.a

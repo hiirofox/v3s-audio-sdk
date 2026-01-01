@@ -1,0 +1,1 @@
+cmd_drivers/dma/mediatek/built-in.a := rm -f drivers/dma/mediatek/built-in.a; echo  | sed -E 's:([^ ]+):drivers/dma/mediatek/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/dma/mediatek/built-in.a

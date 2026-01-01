@@ -1,0 +1,1 @@
+cmd_drivers/base/power/built-in.a := rm -f drivers/base/power/built-in.a; echo sysfs.o generic_ops.o common.o qos.o runtime.o wakeirq.o clock_ops.o | sed -E 's:([^ ]+):drivers/base/power/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/base/power/built-in.a

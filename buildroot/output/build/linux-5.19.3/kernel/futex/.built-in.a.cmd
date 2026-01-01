@@ -1,0 +1,1 @@
+cmd_kernel/futex/built-in.a := rm -f kernel/futex/built-in.a; echo core.o syscalls.o pi.o requeue.o waitwake.o | sed -E 's:([^ ]+):kernel/futex/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/futex/built-in.a

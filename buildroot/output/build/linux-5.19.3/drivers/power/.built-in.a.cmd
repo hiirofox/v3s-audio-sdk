@@ -1,0 +1,1 @@
+cmd_drivers/power/built-in.a := rm -f drivers/power/built-in.a; echo supply/built-in.a | sed -E 's:([^ ]+):drivers/power/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/power/built-in.a

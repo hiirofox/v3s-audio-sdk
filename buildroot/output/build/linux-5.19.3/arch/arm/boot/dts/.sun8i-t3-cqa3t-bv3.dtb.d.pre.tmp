@@ -1,0 +1,12 @@
+sun8i-t3-cqa3t-bv3.o: arch/arm/boot/dts/sun8i-t3-cqa3t-bv3.dts \
+ arch/arm/boot/dts/sun8i-r40.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-de2.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-r40-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-tcon-top.h \
+ scripts/dtc/include-prefixes/dt-bindings/reset/sun8i-r40-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/reset/sun8i-de2.h \
+ scripts/dtc/include-prefixes/dt-bindings/thermal/thermal.h \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ arch/arm/boot/dts/axp22x.dtsi

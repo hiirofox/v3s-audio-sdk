@@ -1,0 +1,1 @@
+cmd_kernel/printk/built-in.a := rm -f kernel/printk/built-in.a; echo printk.o printk_safe.o printk_ringbuffer.o sysctl.o | sed -E 's:([^ ]+):kernel/printk/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/printk/built-in.a

@@ -1,0 +1,1 @@
+cmd_sound/soc/mxs/built-in.a := rm -f sound/soc/mxs/built-in.a; echo  | sed -E 's:([^ ]+):sound/soc/mxs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/soc/mxs/built-in.a

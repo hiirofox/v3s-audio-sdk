@@ -1,0 +1,1 @@
+cmd_drivers/phy/amlogic/built-in.a := rm -f drivers/phy/amlogic/built-in.a; echo  | sed -E 's:([^ ]+):drivers/phy/amlogic/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/amlogic/built-in.a

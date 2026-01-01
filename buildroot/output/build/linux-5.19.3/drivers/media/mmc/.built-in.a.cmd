@@ -1,0 +1,1 @@
+cmd_drivers/media/mmc/built-in.a := rm -f drivers/media/mmc/built-in.a; echo siano/built-in.a | sed -E 's:([^ ]+):drivers/media/mmc/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/mmc/built-in.a

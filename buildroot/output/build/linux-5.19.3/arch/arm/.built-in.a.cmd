@@ -1,0 +1,1 @@
+cmd_arch/arm/built-in.a := rm -f arch/arm/built-in.a; echo vfp/built-in.a vdso/built-in.a kernel/built-in.a mm/built-in.a common/built-in.a probes/built-in.a net/built-in.a crypto/built-in.a | sed -E 's:([^ ]+):arch/arm/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST arch/arm/built-in.a

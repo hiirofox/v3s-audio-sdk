@@ -1,0 +1,1 @@
+cmd_fs/kernfs/built-in.a := rm -f fs/kernfs/built-in.a; echo mount.o inode.o dir.o file.o symlink.o | sed -E 's:([^ ]+):fs/kernfs/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/kernfs/built-in.a

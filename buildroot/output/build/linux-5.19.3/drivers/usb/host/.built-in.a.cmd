@@ -1,0 +1,1 @@
+cmd_drivers/usb/host/built-in.a := rm -f drivers/usb/host/built-in.a; echo ehci-hcd.o ehci-platform.o | sed -E 's:([^ ]+):drivers/usb/host/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/usb/host/built-in.a

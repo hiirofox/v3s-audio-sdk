@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/ti/built-in.a := rm -f drivers/pinctrl/ti/built-in.a; echo  | sed -E 's:([^ ]+):drivers/pinctrl/ti/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/pinctrl/ti/built-in.a

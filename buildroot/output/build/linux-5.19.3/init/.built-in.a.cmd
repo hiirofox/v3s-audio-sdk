@@ -1,0 +1,1 @@
+cmd_init/built-in.a := rm -f init/built-in.a; echo main.o version.o do_mounts.o do_mounts_initrd.o initramfs.o calibrate.o init_task.o | sed -E 's:([^ ]+):init/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST init/built-in.a

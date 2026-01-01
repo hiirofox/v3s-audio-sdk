@@ -1,0 +1,1 @@
+cmd_drivers/video/fbdev/built-in.a := rm -f drivers/video/fbdev/built-in.a; echo core/built-in.a omap/built-in.a omap2/built-in.a | sed -E 's:([^ ]+):drivers/video/fbdev/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/video/fbdev/built-in.a

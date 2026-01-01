@@ -1,0 +1,1 @@
+cmd_fs/ntfs3/built-in.a := rm -f fs/ntfs3/built-in.a; echo attrib.o attrlist.o bitfunc.o bitmap.o dir.o fsntfs.o frecord.o file.o fslog.o inode.o index.o lznt.o namei.o record.o run.o super.o upcase.o xattr.o | sed -E 's:([^ ]+):fs/ntfs3/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST fs/ntfs3/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/soc/fsl/built-in.a := rm -f drivers/soc/fsl/built-in.a; echo  | sed -E 's:([^ ]+):drivers/soc/fsl/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/soc/fsl/built-in.a

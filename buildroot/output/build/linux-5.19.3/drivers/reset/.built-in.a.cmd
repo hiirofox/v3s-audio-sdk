@@ -1,0 +1,1 @@
+cmd_drivers/reset/built-in.a := rm -f drivers/reset/built-in.a; echo core.o hisilicon/built-in.a reset-simple.o reset-sunxi.o | sed -E 's:([^ ]+):drivers/reset/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/reset/built-in.a

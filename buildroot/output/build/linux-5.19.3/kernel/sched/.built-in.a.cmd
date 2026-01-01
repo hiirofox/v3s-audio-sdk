@@ -1,0 +1,1 @@
+cmd_kernel/sched/built-in.a := rm -f kernel/sched/built-in.a; echo core.o fair.o build_policy.o build_utility.o | sed -E 's:([^ ]+):kernel/sched/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/sched/built-in.a

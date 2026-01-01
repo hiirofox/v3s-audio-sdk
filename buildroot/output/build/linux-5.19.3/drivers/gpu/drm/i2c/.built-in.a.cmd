@@ -1,0 +1,1 @@
+cmd_drivers/gpu/drm/i2c/built-in.a := rm -f drivers/gpu/drm/i2c/built-in.a; echo  | sed -E 's:([^ ]+):drivers/gpu/drm/i2c/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/gpu/drm/i2c/built-in.a

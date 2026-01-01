@@ -1,0 +1,1 @@
+cmd_drivers/net/ethernet/fungible/built-in.a := rm -f drivers/net/ethernet/fungible/built-in.a; echo  | sed -E 's:([^ ]+):drivers/net/ethernet/fungible/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/net/ethernet/fungible/built-in.a

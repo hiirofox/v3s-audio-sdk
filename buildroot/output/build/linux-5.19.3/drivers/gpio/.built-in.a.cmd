@@ -1,0 +1,1 @@
+cmd_drivers/gpio/built-in.a := rm -f drivers/gpio/built-in.a; echo gpiolib.o gpiolib-devres.o gpiolib-legacy.o gpiolib-of.o gpiolib-cdev.o gpiolib-sysfs.o | sed -E 's:([^ ]+):drivers/gpio/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/gpio/built-in.a

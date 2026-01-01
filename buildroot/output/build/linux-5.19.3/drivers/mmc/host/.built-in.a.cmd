@@ -1,0 +1,1 @@
+cmd_drivers/mmc/host/built-in.a := rm -f drivers/mmc/host/built-in.a; echo sunxi-mmc.o | sed -E 's:([^ ]+):drivers/mmc/host/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/mmc/host/built-in.a

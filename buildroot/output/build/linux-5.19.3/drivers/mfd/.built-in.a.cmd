@@ -1,0 +1,1 @@
+cmd_drivers/mfd/built-in.a := rm -f drivers/mfd/built-in.a; echo sun6i-prcm.o mfd-core.o syscon.o | sed -E 's:([^ ]+):drivers/mfd/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/mfd/built-in.a

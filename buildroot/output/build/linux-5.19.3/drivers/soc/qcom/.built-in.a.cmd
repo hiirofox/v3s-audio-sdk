@@ -1,0 +1,1 @@
+cmd_drivers/soc/qcom/built-in.a := rm -f drivers/soc/qcom/built-in.a; echo  | sed -E 's:([^ ]+):drivers/soc/qcom/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/soc/qcom/built-in.a

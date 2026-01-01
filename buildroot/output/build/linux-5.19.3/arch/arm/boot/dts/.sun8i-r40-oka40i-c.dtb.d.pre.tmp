@@ -1,0 +1,14 @@
+sun8i-r40-oka40i-c.o: arch/arm/boot/dts/sun8i-r40-oka40i-c.dts \
+ arch/arm/boot/dts/sun8i-r40-feta40i.dtsi \
+ arch/arm/boot/dts/sun8i-r40.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-de2.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-r40-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun8i-tcon-top.h \
+ scripts/dtc/include-prefixes/dt-bindings/reset/sun8i-r40-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/reset/sun8i-de2.h \
+ scripts/dtc/include-prefixes/dt-bindings/thermal/thermal.h \
+ arch/arm/boot/dts/axp22x.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/leds/common.h

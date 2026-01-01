@@ -1,0 +1,1 @@
+cmd_virt/lib/built-in.a := rm -f virt/lib/built-in.a; echo  | sed -E 's:([^ ]+):virt/lib/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST virt/lib/built-in.a

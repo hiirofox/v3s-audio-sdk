@@ -1,0 +1,1 @@
+cmd_kernel/rcu/built-in.a := rm -f kernel/rcu/built-in.a; echo update.o sync.o srcutree.o tree.o rcu_segcblist.o | sed -E 's:([^ ]+):kernel/rcu/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST kernel/rcu/built-in.a

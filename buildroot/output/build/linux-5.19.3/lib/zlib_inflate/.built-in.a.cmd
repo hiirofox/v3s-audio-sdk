@@ -1,0 +1,1 @@
+cmd_lib/zlib_inflate/built-in.a := rm -f lib/zlib_inflate/built-in.a; echo inffast.o inflate.o infutil.o inftrees.o inflate_syms.o | sed -E 's:([^ ]+):lib/zlib_inflate/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST lib/zlib_inflate/built-in.a

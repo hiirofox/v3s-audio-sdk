@@ -1,0 +1,1 @@
+cmd_drivers/net/phy/built-in.a := rm -f drivers/net/phy/built-in.a; echo mdio-boardinfo.o mdio_devres.o phylink.o phy.o phy-c45.o phy-core.o phy_device.o linkmode.o mdio_bus.o mdio_device.o swphy.o fixed_phy.o | sed -E 's:([^ ]+):drivers/net/phy/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/net/phy/built-in.a

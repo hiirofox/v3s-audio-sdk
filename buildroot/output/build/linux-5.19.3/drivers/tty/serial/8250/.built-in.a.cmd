@@ -1,0 +1,1 @@
+cmd_drivers/tty/serial/8250/built-in.a := rm -f drivers/tty/serial/8250/built-in.a; echo 8250_core.o 8250_port.o 8250_dma.o 8250_dwlib.o 8250_early.o 8250_fsl.o 8250_dw.o 8250_of.o | sed -E 's:([^ ]+):drivers/tty/serial/8250/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/tty/serial/8250/built-in.a

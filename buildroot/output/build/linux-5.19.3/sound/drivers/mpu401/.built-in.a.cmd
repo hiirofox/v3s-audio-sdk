@@ -1,0 +1,1 @@
+cmd_sound/drivers/mpu401/built-in.a := rm -f sound/drivers/mpu401/built-in.a; echo  | sed -E 's:([^ ]+):sound/drivers/mpu401/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST sound/drivers/mpu401/built-in.a

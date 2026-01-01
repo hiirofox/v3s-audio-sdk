@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/ti/built-in.a := rm -f drivers/media/platform/ti/built-in.a; echo am437x/built-in.a cal/built-in.a vpe/built-in.a davinci/built-in.a omap/built-in.a omap3isp/built-in.a | sed -E 's:([^ ]+):drivers/media/platform/ti/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/platform/ti/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/net/mdio/built-in.a := rm -f drivers/net/mdio/built-in.a; echo fwnode_mdio.o of_mdio.o mdio-mux.o | sed -E 's:([^ ]+):drivers/net/mdio/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/net/mdio/built-in.a

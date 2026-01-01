@@ -1,0 +1,1 @@
+cmd_drivers/firmware/meson/built-in.a := rm -f drivers/firmware/meson/built-in.a; echo  | sed -E 's:([^ ]+):drivers/firmware/meson/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/firmware/meson/built-in.a

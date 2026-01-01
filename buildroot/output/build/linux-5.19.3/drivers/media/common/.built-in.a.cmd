@@ -1,0 +1,1 @@
+cmd_drivers/media/common/built-in.a := rm -f drivers/media/common/built-in.a; echo b2c2/built-in.a saa7146/built-in.a siano/built-in.a v4l2-tpg/built-in.a videobuf2/built-in.a | sed -E 's:([^ ]+):drivers/media/common/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/media/common/built-in.a

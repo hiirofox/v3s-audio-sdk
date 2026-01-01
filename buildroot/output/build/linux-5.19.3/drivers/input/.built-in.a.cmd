@@ -1,0 +1,1 @@
+cmd_drivers/input/built-in.a := rm -f drivers/input/built-in.a; echo input.o input-compat.o input-mt.o input-poller.o ff-core.o touchscreen.o | sed -E 's:([^ ]+):drivers/input/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/input/built-in.a

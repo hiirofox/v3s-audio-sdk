@@ -1,0 +1,1 @@
+cmd_arch/arm/crypto/built-in.a := rm -f arch/arm/crypto/built-in.a; echo  | sed -E 's:([^ ]+):arch/arm/crypto/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST arch/arm/crypto/built-in.a

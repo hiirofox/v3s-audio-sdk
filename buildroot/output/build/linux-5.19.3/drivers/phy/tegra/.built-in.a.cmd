@@ -1,0 +1,1 @@
+cmd_drivers/phy/tegra/built-in.a := rm -f drivers/phy/tegra/built-in.a; echo  | sed -E 's:([^ ]+):drivers/phy/tegra/\1:g' | xargs /home/hiirofox/v3s-sdk/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/phy/tegra/built-in.a
